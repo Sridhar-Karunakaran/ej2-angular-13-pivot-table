@@ -1,27 +1,94 @@
-# GridSample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+# Syncfusion Angular Pivot Table – Basic Usage Example
 
-## Development server
+This sample demonstrates how to integrate and configure the **Syncfusion Pivot Table (PivotView)** component in an **Angular 13** application. The Pivot Table is a powerful UI component for organizing and analyzing large datasets in a tabular format.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 📖 Overview
 
-## Code scaffolding
+The Syncfusion Pivot Table (PivotView) component allows users to summarize and analyze data interactively. In this example, we showcase how to:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Set up the Pivot Table in an Angular 13 application.
+- Bind a static dataset to the component.
+- Configure rows, columns, values, and formatting options.
 
-## Build
+The sample uses a dataset representing sales information for **Mountain Bikes** in **France** across different **quarters** and **fiscal years**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🧩 Features Demonstrated
 
-## Running unit tests
+- **Data Binding:**  
+  The Pivot Table is bound to a static array of sales data using the `dataSourceSettings` property.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Row and Column Configuration:**  
+  - **Rows:** `Country`, `Products`  
+  - **Columns:** `Year` (captioned as "Production Year"), `Quarter`  
+  - **Values:** `Sold` (Units Sold), `Amount` (Sold Amount)
 
-## Running end-to-end tests
+- **Custom Captions:**  
+  Field captions are customized for better readability using the `caption` property.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Responsive Layout:**  
+  The Pivot Table is rendered with a fixed height of `350px` for optimal display.
 
-## Further help
+## 🛠 Prerequisites
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run this sample, ensure you have the following:
+
+- **Node.js** and **npm** installed
+- **Angular CLI** installed globally
+- A modern browser (Chrome, Firefox, Edge)
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SyncfusionExamples/ej2-angular-13-pivot-table
+   ```
+
+2. **Navigate to the project folder:**
+   ```bash
+   cd angular-pivot-table-sample
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Run the application:**
+   ```bash
+   ng serve
+   ```
+
+5. **Open in browser:**
+   Visit `http://localhost:4200` to view the Pivot Table in action.
+
+## 📊 Sample Data
+
+The sample uses a small dataset with the following fields:
+
+```json
+[
+  { "Sold": 31, "Amount": 52824, "Country": "France", "Products": "Mountain Bikes", "Year": "FY 2015", "Quarter": "Q1" },
+  { "Sold": 51, "Amount": 86904, "Country": "France", "Products": "Mountain Bikes", "Year": "FY 2015", "Quarter": "Q2" },
+  { "Sold": 90, "Amount": 153360, "Country": "France", "Products": "Mountain Bikes", "Year": "FY 2015", "Quarter": "Q3" },
+  { "Sold": 25, "Amount": 42600, "Country": "France", "Products": "Mountain Bikes", "Year": "FY 2015", "Quarter": "Q4" },
+  { "Sold": 27, "Amount": 46008, "Country": "France", "Products": "Mountain Bikes", "Year": "FY 2016", "Quarter": "Q1" }
+]
+```
+
+## 📚 Learn More
+
+- [Syncfusion Angular Pivot Table Documentation](https://ej2.syncfusion.com/angular/documentation/pivotview/getting-started/)
+- [Angular Pivot Table Demos](https://ej2.syncfusion.com/angular/demos/#/material3/pivot-table/overview)
+
+## 💬 Support
+
+For questions or feedback, visit:
+
+- [Syncfusion Support Portal](https://support.syncfusion.com)
+- [Syncfusion Community Forums](https://www.syncfusion.com/forums)
+
+## 📜 License
+
+This sample uses Syncfusion components which require a valid license for commercial use.  
+[View Syncfusion License Terms](https://www.syncfusion.com/license/studio/22.2.5/syncfusion_essential_studio_eula.pdf)
